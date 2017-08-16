@@ -1,0 +1,21 @@
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar-content">
+      <div class="left-side">
+        <a href="/"><h3>MyWissen</h3></a>
+      </div>
+      <div class="right-side">
+        <%= link_to "About" ,"#" %>
+        <%= link_to "Profile", "#" %>
+        <div class="dropdown">
+          <div class="avatar-wissen" style="background-color: blue" id="navbar-wagon-menu" data-toggle="dropdown"></div>
+          <ul class="dropdown-menu">
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+        </div>
+        <%= link_to "Download", "#", class: "btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+</div>
