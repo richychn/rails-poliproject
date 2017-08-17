@@ -1,1 +1,54 @@
 // Specific CSS for your home-page
+#banner-wissen {
+  background-color: $blue;
+  padding: 80px;
+}
+
+.div-content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#banner-content{
+  background-color: $light-blue;
+  padding: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  h1 {
+    padding-top: 0;
+  }
+  .subheading {
+    font-size: 30px;
+  }
+}
+
+.details {
+  font-size: 20px;
+}
+
+#info-wissen {
+  background-color: white;
+  padding: 60px;
+}
+
+#search-wissen {
+  background-color: $light-blue;
+  padding: 60px;
+}
+
+#search-content {
+  width: 50%;
+}
+
+#started-wissen {
+  background-color: white;
+  padding: 60px;
+}
+
+.start-card {
+  background-color: $light-blue;
+  padding: 40px;
+}
