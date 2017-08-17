@@ -34,8 +34,24 @@
   border-radius: 3px;
 }
 
-/* Right section */
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  >* {
+    margin-right: 10px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
 .right-side {
+  * {
+    transition: all ease 0.3s;
+  }
   display: flex;
   flex-direction: row;
   align-items: center;
