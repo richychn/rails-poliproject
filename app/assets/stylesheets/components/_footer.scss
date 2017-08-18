@@ -1,0 +1,39 @@
+.footer {
+  background-color: $dark-blue;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: $white-blue;
+  }
+  a:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+  p {
+    color: $blue;
+    font-size: 15px;
+  }
+}
+
+#social-links a {
+  font-size: 24px;
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+#page-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#page-links a {
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

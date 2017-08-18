@@ -16,7 +16,8 @@
   padding: 50px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  width: 50%;
+  max-width: 50%;
+  min-width: 300px;
   h1 {
     padding-top: 0;
   }
@@ -39,11 +40,17 @@
   padding: 60px;
 }
 
-#search-content {
-  width: 50%;
+.search-bar {
+  margin-bottom: 20px;
+  height: 45px;
 }
 
-#started-wissen {
+#search-content {
+  max-width: 50%;
+  min-width: 300px;
+}
+
+#get-started {
   background-color: white;
   padding: 60px;
 }
