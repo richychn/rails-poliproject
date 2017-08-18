@@ -1,0 +1,9 @@
+.ribbon{
+     width:0;
+     height:70px;
+     border-right:30px solid $dark-blue;
+     border-left:30px solid $dark-blue;
+     border-bottom:20px solid transparent;
+     position: absolute;
+     top: -10px;
+}
