@@ -9,13 +9,16 @@
   justify-content: space-between;
   border-top: 3px solid $dark-blue;
   a {
-    font-family: "Libre Baskerville", serif;
+    font-family: $headings-font-family;
     text-decoration: none;
     color: $dark-blue;
   }
   a:hover {
     text-decoration: none;
     color: $light-blue;
+    img {
+      background-color: $white-blue;
+    }
   }
   .btn {
     color: $white-blue;
@@ -42,11 +45,17 @@
   justify-content: space-between;
   >* {
     margin-right: 10px;
+    transition: all ease 0.3s;
   }
   h3 {
     margin: 0;
     font-size: 30px;
   }
+}
+
+.logo {
+  background-color: $dark-blue;
+  transition: all ease 0.3s;
 }
 
 .right-side {
