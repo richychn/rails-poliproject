@@ -3,22 +3,30 @@
     <div class="navbar-content">
       <a href="/">
         <div class="left-side">
-          <%= image_tag "logo-blue.png", style: "width: 40px; height: 40px;" %>
+          <%= image_tag "bgwhite-logo.png", class: "logo", style: "width: 40px; height: 40px;" %>
           <h3>MyWissen</h3>
         </div>
       </a>
-      <div class="right-side">
-        <%= link_to "About" ,"#" %>
-        <%= link_to "Profile", "#" %>
-        <div class="dropdown">
-          <div class="avatar-wissen" style="background-color: blue" id="navbar-wagon-menu" data-toggle="dropdown"></div>
-          <ul class="dropdown-menu">
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
+      <% if user_signed_in? %>
+        <div class="right-side">
+          <%= link_to "About" ,"#" %>
+          <%= link_to "Profile", "#" %>
+          <div class="dropdown">
+            <div class="avatar-wissen" style="background-color: blue" data-toggle="dropdown"></div>
+            <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><%= link_to "Log Out", destroy_user_session_path, method: "delete" %></li>
+          </ul>
+          </div>
+          <%= link_to "Download", "#", class: "btn btn-danger" %>
         </div>
-        <%= link_to "Download", "#", class: "btn btn-danger" %>
-      </div>
+      <% else %>
+        <div class="right-side">
+          <%= link_to "About" ,"#" %>
+          <%= link_to "Login", new_user_session_path %>
+          <%= link_to "Sign Up", "#", class: "btn btn-danger btn-bold" %>
+        </div>
+      <% end -%>
     </div>
   </div>
 </div>
