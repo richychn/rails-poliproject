@@ -1,0 +1,11 @@
+#login-link {
+  font-family: 'Libre Baskerville', serif;
+  a {
+    color: $dark-blue;
+    transition: all ease 0.2s;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+}
