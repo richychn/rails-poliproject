@@ -13,3 +13,12 @@
 .btn {
   transition: all ease 0.2s;
 }
+
+.link-white {
+  color: $white-blue;
+}
+
+.link-white:hover {
+  color: $dark-blue;
+  text-decoration: none;
+}
