@@ -1,3 +1,6 @@
+<% content_for(:title_tag) do %>
+  <%= current_user.first_name ? current_user.first_name : "Profile" %> | MyWissen
+<% end -%>
 <% if current_user.scans.any? %>
   <%= render 'scan' %>
   <%= render 'data' %>

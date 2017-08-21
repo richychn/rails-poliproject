@@ -16,7 +16,6 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'cloudinary'
-gem 'google-cloud'
 gem 'devise'
 
 group :development, :test do
