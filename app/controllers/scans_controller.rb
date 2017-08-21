@@ -1,3 +1,7 @@
+require 'open-uri'
+require 'nokogiri'
+require "google/cloud/language"
+
 class ScansController < ApplicationController
 
   def create
@@ -18,6 +22,7 @@ class ScansController < ApplicationController
 
   def url_bias(url)
     text = webpage_to_text(url)
+    syntax = text_analysis(text)
   end
 
   def webpage_to_text(url)
@@ -25,9 +30,14 @@ class ScansController < ApplicationController
     html_doc = Nokogiri::HTML(html_file)
     text = ""
     html_doc.search('p').each do |element|
-      byebug
       text += element.text
     end
     return text
+  end
+
+  def text_analysis(text)
+    language  = Google::Cloud::Language.new project: PROJECT_ID
+    document  = language.document text
+    return document.syntax
   end
 end
