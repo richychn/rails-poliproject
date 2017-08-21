@@ -1,15 +1,12 @@
 <div class="lblue-wrapper text-center">
   <div class="container">
-    <p>Your most recently scanned article</p>
+    <p style="font-size: 24px;">Your most recently scanned article</p>
     <h4><%= @last_article.title %></h4>
-    <p>leans towards</p>
-    <h3><%= @last_article.bias ? "Liberal" : "Conservative" %></h3>
+    <p style="font-size: 24px;">leans towards</p>
+    <h3 style="margin-top: 10px;"><%= @last_article.bias ? "Liberal" : "Conservative" %></h3>
     <div class="row" style="margin-top: 30px;">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <form class="form-group">
-          <input type="text" class="form-control search-bar">
-          <button type="submit" class="btn btn-bold btn-primary btn-lg">Search</button>
-        </form>
+        <%= render 'shared/search' %>
       </div>
     </div>
   </div>
