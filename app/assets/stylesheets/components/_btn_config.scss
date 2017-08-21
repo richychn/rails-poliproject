@@ -16,6 +16,7 @@
 
 .link-white {
   color: $white-blue;
+  transition: all ease 0.2s;
 }
 
 .link-white:hover {
@@ -29,6 +30,15 @@
   transition: all ease 0.2s;
   &:hover {
     color: $dark-blue;
+    text-decoration: none;
+  }
+}
+
+.link-dark {
+  color: $dark-blue;
+  transition: all ease 0.2s;
+  &:hover {
+    color: $blue;
     text-decoration: none;
   }
 }

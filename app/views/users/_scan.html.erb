@@ -1,7 +1,7 @@
 <div class="lblue-wrapper text-center">
   <div class="container">
     <p style="font-size: 24px;">Your most recently scanned article</p>
-    <h4><%= @last_article.title %></h4>
+    <h4><%= link_to @last_article.title, @last_article.url, target: "_blank", class: "link-dark" %></h4>
     <p style="font-size: 24px;">leans towards</p>
     <h3 style="margin-top: 10px;"><%= @last_article.bias ? "Liberal" : "Conservative" %></h3>
     <div class="row" style="margin-top: 30px;">
