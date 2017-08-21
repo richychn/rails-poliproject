@@ -1,3 +1,7 @@
-<%= render 'scan' %>
-<%= render 'data' %>
-<%= render 'opposite' %>
+<% if current_user.scans.any? %>
+  <%= render 'scan' %>
+  <%= render 'data' %>
+  <%= render 'opposite' %>
+<% else %>
+  <%= render 'no_scans' %>
+<% end -%>

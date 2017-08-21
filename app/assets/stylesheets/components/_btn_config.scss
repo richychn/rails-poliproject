@@ -22,3 +22,13 @@
   color: $dark-blue;
   text-decoration: none;
 }
+
+.link-intext {
+  font-weight: bold;
+  color: $blue;
+  transition: all ease 0.2s;
+  &:hover {
+    color: $dark-blue;
+    text-decoration: none;
+  }
+}
