@@ -10,7 +10,7 @@
   <div id="page-links">
     <%= link_to "Home", "/" %>
     <%= link_to "About", "#" %>
-    <%= link_to "Profile", "#" %>
+    <%= link_to "Profile", current_user ? user_path(current_user) : new_user_session_path %>
     <%= link_to "Contact", "#" %>
   </div>
   <div id="copyright">
