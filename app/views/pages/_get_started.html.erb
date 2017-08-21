@@ -24,7 +24,7 @@
         <div class="start-card">
         <div class="ribbon"></div>
           <p class="details">Your MyWissen Profile shows you informative charts about the bias of articles you have read as well as your most recently scanned bias.</p>
-          <%= link_to "MyWissen Profile", "#", class: "btn btn-primary btn-large btn-bold btn-full-width" %>
+          <%= link_to "MyWissen Profile", current_user ? user_path(current_user) : new_user_session_path, class: "btn btn-primary btn-large btn-bold btn-full-width" %>
         </div>
       </div>
     </div>
