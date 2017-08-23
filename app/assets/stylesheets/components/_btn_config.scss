@@ -32,12 +32,20 @@
     color: $dark-blue;
     text-decoration: none;
   }
+  &:focus {
+    color: $dark-blue;
+    text-decoration: none;
+  }
 }
 
 .link-dark {
   color: $dark-blue;
   transition: all ease 0.2s;
   &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+  &:focus {
     color: $blue;
     text-decoration: none;
   }
@@ -51,6 +59,10 @@
   padding-left: 9px;
   font-family: $headers-font;
   &:hover {
+    color: white;
+    background-color: $facebook-dark-blue;
+  }
+  &:focus {
     color: white;
     background-color: $facebook-dark-blue;
   }
