@@ -12,7 +12,7 @@
           <%= link_to "About" ,"#" %>
           <%= link_to "Profile", user_path(current_user) %>
           <div class="dropdown">
-            <div class="avatar-wissen" style="background-color: blue" data-toggle="dropdown"></div>
+            <div class="avatar-wissen" style="background-image: url(<%= cl_image_path current_user.photo.path %>)" data-toggle="dropdown"></div>
             <ul class="dropdown-menu">
             <li><a href="#">Account</a></li>
             <li><%= link_to "Log Out", destroy_user_session_path, method: "delete" %></li>
